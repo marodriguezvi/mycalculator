@@ -8,10 +8,10 @@ import (
 	"strings"
 )
 
-type calc struct{}
+type Calc struct{}
 
 // recivers permite agregar una función al struct calc
-func (calc) operate(input string, operator string) int {
+func (Calc) Operate(input string, operator string) int {
 	cleanInput := strings.Split(input, operator)
 	value1 := parseInt(cleanInput[0])
 	value2 := parseInt(cleanInput[1])
