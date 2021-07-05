@@ -36,7 +36,7 @@ func parseInt(input string) int {
 	return value
 }
 
-func readInput(message string) string {
+func ReadInput(message string) string {
 	fmt.Println(message)
 	scanner := bufio.NewScanner(os.Stdin)
 	scanner.Scan()
